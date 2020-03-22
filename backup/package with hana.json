@@ -1,0 +1,30 @@
+{
+  "name": "my-bookshop",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^3.31.2",
+    "express": "^4",
+    "hdb": "^0.17.1"
+  },
+  "scripts": {
+    "start": "npx cds run"
+  },
+  "devDependencies": {
+    "sqlite3": "^4.1.1"
+  },
+   "cds": {
+    "requires": {
+      "db": {
+        "kind": "hana",
+        "model": [
+          "db",
+          "srv"
+        ]
+      }
+    }
+  } 
+}
